@@ -14,11 +14,17 @@ cursor = conexao.cursor()
 # CRUD
 
 # CREATE
-nomeProduto ='Mouse optico' #Informar o nome do produto
-valor=99 #Informar o valor
-comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
+# nomeProduto ='Mouse optico' #Informar o nome do produto
+# valor=99 #Informar o valor
+# comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
+# cursor.execute(comando)
+# conexao.commit() 
+
+#READ ALL
+comando = f'SELECT * FROM vendas'
 cursor.execute(comando)
-conexao.commit() 
+resultado = cursor.fetchall() 
+print(resultado)
 
 
 
