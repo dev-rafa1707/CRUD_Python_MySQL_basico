@@ -24,6 +24,8 @@ CRUD
 * Instalar o drive de conexão python mysql
 pip install mysql-connector-python
 
+pip install python-dotenv
+
 
 ### Como rodar a aplicação
 

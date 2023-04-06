@@ -1,12 +1,16 @@
 
 
 import mysql.connector
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 conexao = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='rafa1707',
-    database='pybasic',
+    host=os.environ.get('DB_HOST'),
+    user=os.environ.get('DB_USER'),
+    password=os.environ.get('DB_PASSWORD'),
+    database=os.environ.get('DB_NAME'),
 )
 
 cursor = conexao.cursor()
@@ -14,11 +18,11 @@ cursor = conexao.cursor()
 # CRUD
 
 # CREATE
-nomeProduto ='Mouse optico' #Informar o nome do produto
-valor=99 #Informar o valor
-comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
-cursor.execute(comando)
-conexao.commit() 
+# nomeProduto ='Mouse optico' #Informar o nome do produto
+# valor=99 #Informar o valor
+# comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
+# cursor.execute(comando)
+# conexao.commit() 
 
 #READ ALL
 comando = f'SELECT * FROM vendas'
@@ -35,17 +39,17 @@ resultado = cursor.fetchall()
 print(resultado)
 
 #UPDATE
-idVenda = 4
-valor = 79
-comando = f'UPDATE vendas SET valor = {valor} WHERE idVenda = {idVenda}'
-cursor.execute(comando)
-conexao.commit()
+# idVenda = 4
+# valor = 79
+# comando = f'UPDATE vendas SET valor = {valor} WHERE idVenda = {idVenda}'
+# cursor.execute(comando)
+# conexao.commit()
 
 #DELETE
-idVenda = 2
-comando = f'DELETE FROM vendas WHERE idVenda = {idVenda}'
-cursor.execute(comando)
-conexao.commit()
+# idVenda = 2
+# comando = f'DELETE FROM vendas WHERE idVenda = {idVenda}'
+# cursor.execute(comando)
+# conexao.commit()
 
 
 
