@@ -19,15 +19,24 @@ CRUD
 * Exclui produto cadastrado (Delete)
 
 ### Pré-requisitos
+* Ter o Python instalado na máquina
+
 * Ter o MySQL instalado na máquina
 
-* Instalar o drive de conexão python mysql
-pip install mysql-connector-python
 
-pip install python-dotenv
 
 
 ### Como rodar a aplicação
+
+* Fazer o download do projeto a partir de <git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git>.
+
+* Instalar o drive de conexão python mysql / Install the driver connection python-mysql
+pip install mysql-connector-python
+
+*  Consfigurar as variáveis de ambiente usando dotenv/ Set the environment variables using dotenv
+pip install python-dotenv
+
+
 
 ### Para testar o projeto
 

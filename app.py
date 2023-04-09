@@ -5,7 +5,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
 conexao = mysql.connector.connect(
     host=os.environ.get('DB_HOST'),
     user=os.environ.get('DB_USER'),
@@ -32,11 +31,11 @@ print(resultado)
 
 
 #READ BY ID
-idVenda = 4
-comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
-cursor.execute(comando)
-resultado = cursor.fetchall()
-print(resultado)
+# idVenda = 4
+# comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
+# cursor.execute(comando)
+# resultado = cursor.fetchall()
+# print(resultado)
 
 #UPDATE
 # idVenda = 4
