@@ -68,15 +68,14 @@ create table vendas (
 * bd.py is used as a local database
 (O arquivo bd.py é usado como banco de dados local)
 
-### Para testar o projeto
 
 
 
-### Principais comandos
-* Editar o banco de dados
+### Main commands / Principais comandos
+* Update in database / Editar o banco de dados
 conexao.commit()
 
-* Ler o banco de dados
+* Read from database / Ler o banco de dados
 cursor.fetchall()
 
 
