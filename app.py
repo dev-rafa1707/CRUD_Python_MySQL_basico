@@ -24,22 +24,22 @@ cursor = conexao.cursor()
 # conexao.commit() 
 
 #READ ALL
-comando = f'SELECT * FROM vendas'
-cursor.execute(comando)
-resultado = cursor.fetchall() 
-print(resultado)
+# comando = f'SELECT * FROM vendas'
+# cursor.execute(comando)
+# resultado = cursor.fetchall() 
+# print(resultado)
 
 
 #READ BY ID
-# idVenda = 4
-# comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
-# cursor.execute(comando)
-# resultado = cursor.fetchall()
-# print(resultado)
+idVenda = 4
+comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
+cursor.execute(comando)
+resultado = cursor.fetchall()
+print(resultado)
 
 #UPDATE
 # idVenda = 4
-# valor = 79
+# valor = 95
 # comando = f'UPDATE vendas SET valor = {valor} WHERE idVenda = {idVenda}'
 # cursor.execute(comando)
 # conexao.commit()
