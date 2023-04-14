@@ -82,4 +82,32 @@ cursor.fetchall()
 
 
 
-  
+  ########## TESTING AREA ##############
+
+
+
+venda = getById(1)
+print(venda)
+
+vendas = getAll()
+print(vendas)
+
+
+alteraVenda = update(1,'PC Gamer Extra', 2799)
+print(alteraVenda)
+
+
+novaVenda = create("Cadeira Games", 1789)
+print(novaVenda)
+
+
+
+venda = getById(1)
+print(venda)
+
+delVenda = delete(5)
+vendas = getAll()
+print(vendas)
+
+cursor.close()
+conexao.close()
