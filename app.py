@@ -23,11 +23,23 @@ cursor = conexao.cursor()
 # cursor.execute(comando)
 # conexao.commit() 
 
+# CREATE
+def createCar(nomeProduto, valor):
+    comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
+    cursor.execute(comando)
+    conexao.commit()
+    return True
+
+
 #READ ALL
 comando = f'SELECT * FROM vendas'
 cursor.execute(comando)
 resultado = cursor.fetchall() 
 print(resultado)
+
+
+
+
 
 
 #READ BY ID
