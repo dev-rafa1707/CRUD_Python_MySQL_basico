@@ -65,12 +65,6 @@ create table vendas (
 * Use app.py to run the operations (CRUD)
 (O arquivos app.py é utilizado para processar as operações do CRUD)
 
-* bd.py is used as a local database
-(O arquivo bd.py é usado como banco de dados local)
-
-The readAll option is unchecked as a comment. The other CRUD options are marked as comments. To execute any operation, you must uncheck the desired option and run the app.py file
-
-A opção readAll está desmarcada como comentario. As outras opções do CRUD estao marcadas como comentario. Para realizar uma operação, você deve desmarcar a opção desejada e executar o arquivo app.py
 
 
 ### Main commands / Principais comandos
@@ -81,8 +75,8 @@ conexao.commit()
 cursor.fetchall()
 
 
+### How to test the application / Como testar a aplicação
 
-  ########## TESTING AREA ##############
 
 
 
@@ -92,15 +86,11 @@ print(venda)
 vendas = getAll()
 print(vendas)
 
-
 alteraVenda = update(1,'PC Gamer Extra', 2799)
 print(alteraVenda)
 
-
 novaVenda = create("Cadeira Games", 1789)
 print(novaVenda)
-
-
 
 venda = getById(1)
 print(venda)
