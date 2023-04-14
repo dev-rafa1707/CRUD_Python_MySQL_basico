@@ -16,26 +16,14 @@ cursor = conexao.cursor()
 
 # CRUD
 
-# CREATE
-# nomeProduto ='Mouse optico' #Informar o nome do produto
-# valor=99 #Informar o valor
-# comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
-# cursor.execute(comando)
-# conexao.commit() 
 
 # CREATE
-def createCar(nomeProduto, valor):
+def create(nomeProduto, valor):
     comando = f'INSERT INTO vendas (nomeProduto, valor) VALUES ("{nomeProduto}",{valor})'
     cursor.execute(comando)
     conexao.commit()
     return True
 
-
-#READ ALL
-# comando = f'SELECT * FROM vendas'
-# cursor.execute(comando)
-# resultado = cursor.fetchall() 
-# print(resultado)
 
 #READ ALL
 def getAll():
@@ -46,13 +34,6 @@ def getAll():
 
 
 
-
-# idVenda = 4
-# comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
-# cursor.execute(comando)
-# resultado = cursor.fetchall()
-# print(resultado)
-
 #READ BY ID
 def getById(idVenda):
     comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
@@ -61,13 +42,6 @@ def getById(idVenda):
     return resultado
 
 
-
-#UPDATE
-# idVenda = 4
-# valor = 95
-# comando = f'UPDATE vendas SET valor = {valor} WHERE idVenda = {idVenda}'
-# cursor.execute(comando)
-# conexao.commit()
 
 #UPDATE
 def update(idVenda, nomeProduto, valor):
@@ -94,11 +68,18 @@ vendas = getAll()
 print(vendas)
 
 
-alteraVenda = update(1,'PC Gamer Extra', 2799)
-print(alteraVenda)
+# alteraVenda = update(1,'PC Gamer Extra', 2799)
+# print(alteraVenda)
 
-venda = getById(1)
-print(venda)
+
+novaVenda = create("Cadeira Games", 1789)
+print(novaVenda)
+
+vendas = getAll()
+print(vendas)
+
+# venda = getById(1)
+# print(venda)
 
 
 cursor.close()
