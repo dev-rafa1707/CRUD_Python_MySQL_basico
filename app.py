@@ -38,7 +38,7 @@ def createCar(nomeProduto, valor):
 # print(resultado)
 
 #READ ALL
-def readAll():
+def getAll():
     comando = f'SELECT * FROM vendas'
     cursor.execute(comando)
     resultado = cursor.fetchall()
@@ -46,12 +46,21 @@ def readAll():
 
 
 
-#READ BY ID
+
 # idVenda = 4
 # comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
 # cursor.execute(comando)
 # resultado = cursor.fetchall()
 # print(resultado)
+
+#READ BY ID
+def getById(idVenda):
+    comando = f'SELECT * FROM vendas WHERE idVenda = {idVenda}'
+    cursor.execute(comando)
+    resultado = cursor.fetchall()
+    return resultado
+
+
 
 #UPDATE
 # idVenda = 4
@@ -60,12 +69,36 @@ def readAll():
 # cursor.execute(comando)
 # conexao.commit()
 
+#UPDATE
+def update(idVenda, nomeProduto, valor):
+    comando = f'UPDATE vendas SET nomeProduto = "{nomeProduto}", valor = {valor} WHERE idVenda = {idVenda}'
+    cursor.execute(comando)
+    conexao.commit()
+    return True
+
+
 #DELETE
 # idVenda = 2
 # comando = f'DELETE FROM vendas WHERE idVenda = {idVenda}'
 # cursor.execute(comando)
 # conexao.commit()
 
+########## TESTING AREA ##############
+
+
+
+venda = getById(1)
+print(venda)
+
+vendas = getAll()
+print(vendas)
+
+
+alteraVenda = update(1,'PC Gamer Extra', 2799)
+print(alteraVenda)
+
+venda = getById(1)
+print(venda)
 
 
 cursor.close()
