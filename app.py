@@ -32,13 +32,17 @@ def createCar(nomeProduto, valor):
 
 
 #READ ALL
-comando = f'SELECT * FROM vendas'
-cursor.execute(comando)
-resultado = cursor.fetchall() 
-print(resultado)
+# comando = f'SELECT * FROM vendas'
+# cursor.execute(comando)
+# resultado = cursor.fetchall() 
+# print(resultado)
 
-
-
+#READ ALL
+def readAll():
+    comando = f'SELECT * FROM vendas'
+    cursor.execute(comando)
+    resultado = cursor.fetchall()
+    return resultado
 
 
 
