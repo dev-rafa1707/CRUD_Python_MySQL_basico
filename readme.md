@@ -77,27 +77,28 @@ cursor.fetchall()
 
 ### How to test the application / Como testar a aplicação
 
-
-
-
-venda = getById(1)
-print(venda)
-
-vendas = getAll()
-print(vendas)
-
-alteraVenda = update(1,'PC Gamer Extra', 2799)
-print(alteraVenda)
-
-novaVenda = create("Cadeira Games", 1789)
-print(novaVenda)
-
-venda = getById(1)
-print(venda)
-
-delVenda = delete(5)
-vendas = getAll()
-print(vendas)
-
+To carry out the operations insert the scripts in app.py and the requested information (idVenda, "nomeProduto", valor) before
 cursor.close()
 conexao.close()
+
+
+#### Get by Id
+venda = getById(idVenda)
+print(venda)
+
+#### Get All
+vendas = getAll()
+print(vendas)
+
+#### Update
+alteraVenda = update(idVenda,'nomeProduto', valor)
+print(alteraVenda)
+
+
+#### Create
+novaVenda = create('nomeProduto', valor)
+print(novaVenda)
+
+#### Delete
+delVenda = delete(idVenda)
+
