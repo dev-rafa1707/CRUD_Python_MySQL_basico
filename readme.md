@@ -94,7 +94,6 @@ print(vendas)
 alteraVenda = update(idVenda,'nomeProduto', valor)
 print(alteraVenda)
 
-
 #### Create
 novaVenda = create('nomeProduto', valor)
 print(novaVenda)
