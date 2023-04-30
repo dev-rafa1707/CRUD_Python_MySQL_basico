@@ -106,3 +106,8 @@ delVenda = delete(idVenda)
 Any question or issue, please contact me
 dev-rafa1707
 <rafa1707@gmail.com>
+
+
+
+### License
+No License required 
