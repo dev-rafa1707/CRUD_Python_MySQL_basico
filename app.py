@@ -1,5 +1,3 @@
-
-
 import mysql.connector
 import os
 from dotenv import load_dotenv
@@ -14,8 +12,9 @@ conexao = mysql.connector.connect(
 
 cursor = conexao.cursor()
 
-# CRUD
 
+
+# CRUD
 
 # CREATE
 def create(nomeProduto, valor):
