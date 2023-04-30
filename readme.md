@@ -101,3 +101,8 @@ print(novaVenda)
 #### Delete
 delVenda = delete(idVenda)
 
+
+### Author
+Any question or issue, please contact me
+dev-rafa1707
+<rafa1707@gmail.com>
