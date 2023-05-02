@@ -34,7 +34,7 @@ CRUD
 
 * Download this project from
 (Fazer o download do projeto a partir de)
-<git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git>.
+<p><git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git></p>
 
 * Install the driver connection python-mysql
 (Instalar o drive de conexão python mysql)
@@ -46,7 +46,7 @@ pip install python-dotenv
 
 * Copy .env.example to .env and input the variables as usend in you database
 (Copiar o arquivo .env.example para .env e inserir as variáveis conforme o seu banco de dados)
-DB_HOST=
+<p>DB_HOST=</p>
 DB_USER=
 DB_PASSWORD=
 DB_NAME=
@@ -81,8 +81,8 @@ To test the application just call the function in app.py, passing the informatio
 
 
 #### Get by Id
-venda = getById(idVenda)
-print(venda)
+venda1 = getById(1)
+print(f'Venda 1: {venda1}')
 
 #### Get All
 vendas = getAll()
