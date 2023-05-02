@@ -34,9 +34,9 @@ CRUD
 
 * Download this project from
 (Fazer o download do projeto a partir de)
-</p>
-<git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git>
-<p>
+
+(Link)[git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git]
+
 * Install the driver connection python-mysql
 (Instalar o drive de conexão python mysql)
 pip install mysql-connector-python
