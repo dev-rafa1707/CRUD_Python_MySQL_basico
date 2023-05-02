@@ -34,8 +34,9 @@ CRUD
 
 * Download this project from
 (Fazer o download do projeto a partir de)
-<p><git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git></p>
-
+</p>
+<git@github.com:dev-rafa1707/CRUD_Python_MySQL_basico.git>
+<p>
 * Install the driver connection python-mysql
 (Instalar o drive de conexão python mysql)
 pip install mysql-connector-python
@@ -47,9 +48,9 @@ pip install python-dotenv
 * Copy .env.example to .env and input the variables as usend in you database
 (Copiar o arquivo .env.example para .env e inserir as variáveis conforme o seu banco de dados)
 <p>DB_HOST=</p>
-DB_USER=
-DB_PASSWORD=
-DB_NAME=
+<p>DB_USER=</p>
+<p>DB_PASSWORD=</p>
+<p>DB_NAME=</p>
 
 * Create the table "vendas" in MySQL
 (Criar a tabela "vendas" no MySQL)
