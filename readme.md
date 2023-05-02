@@ -77,9 +77,7 @@ cursor.fetchall()
 
 ### How to test the application / Como testar a aplicação
 
-To carry out the operations insert the scripts in app.py and the requested information (idVenda, "nomeProduto", valor) before
-cursor.close()
-conexao.close()
+To test the application just call the function in app.py, passing the information as parameter if necessary, as shown below:
 
 
 #### Get by Id
