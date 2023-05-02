@@ -62,5 +62,3 @@ def delete(idVenda):
 
 
 
-
-
